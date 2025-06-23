@@ -27,25 +27,30 @@ venv\Scripts\activate      # En Windows
 
 3. Instala las dependencias:
 
-pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
 
 
 4. Crea un archivo .env en la raíz del proyecto (usa el .env.example como referencia)
 
 5. Ejecuta las migraciones:
 
-python manage.py migrate
+    ```bash
+    python manage.py migrate
 
 6. Inicia el servidor:
 
-python manage.py runserver
+    ```bash
+    python manage.py runserver
 
 
 🧪 Endpoints disponibles
-GET /api/clients/ – Listar clientes
+    
+    ```bash
+    GET /api/clients/ – Listar clientes
 
-POST /api/clients/ – Crear cliente
+    POST /api/clients/ – Crear cliente
 
-PUT /api/clients/<id>/ – Actualizar cliente
+    PUT /api/clients/<id>/ – Actualizar cliente
 
-DELETE /api/clients/<id>/ – Eliminar cliente
+    DELETE /api/clients/<id>/ – Eliminar cliente
