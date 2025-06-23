@@ -45,7 +45,7 @@ venv\Scripts\activate      # En Windows
 
 
 🧪 Endpoints disponibles
-    ```bash
+
     GET /api/clients/ – Listar clientes
 
     POST /api/clients/ – Crear cliente
