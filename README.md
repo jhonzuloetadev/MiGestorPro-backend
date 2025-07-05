@@ -48,8 +48,8 @@ venv\Scripts\activate      # En Windows
 
     GET /api/clients – Listar clientes
 
-    POST /api/clients – Crear cliente
+    POST /api/clients/create – Crear cliente
 
-    PUT /api/clients/<id> – Actualizar cliente
+    PUT /api/clients/<id>/update – Actualizar cliente
 
-    DELETE /api/clients/<id> – Eliminar cliente
+    DELETE /api/clients/<id>/delete – Eliminar cliente
