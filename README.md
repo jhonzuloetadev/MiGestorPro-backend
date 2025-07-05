@@ -46,10 +46,10 @@ venv\Scripts\activate      # En Windows
 
 🧪 Endpoints disponibles
 
-    GET /api/clients/ – Listar clientes
+    GET /api/clients – Listar clientes
 
-    POST /api/clients/ – Crear cliente
+    POST /api/clients – Crear cliente
 
-    PUT /api/clients/<id>/ – Actualizar cliente
+    PUT /api/clients/<id> – Actualizar cliente
 
-    DELETE /api/clients/<id>/ – Eliminar cliente
+    DELETE /api/clients/<id> – Eliminar cliente
