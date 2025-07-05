@@ -15,14 +15,25 @@ from decouple import config, UndefinedValueError
 from django.core.management.utils import get_random_secret_key
 import os
 
- 
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+
+
+
 env_path = BASE_DIR / ".env"
 
-# Obtener o generar SECRET_KEY automáticamente
+# Asegúrate de que existe el .env antes de escribir
+if not env_path.exists():
+    env_path.write_text("DEBUG=True\n")
+
+
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG =  config('DEBUG', default=False, cast=bool)
+
+
+# SECRET_KEY automático si no existe
 try:
     SECRET_KEY = config("SECRET_KEY")
 except UndefinedValueError:
@@ -32,9 +43,6 @@ except UndefinedValueError:
 
 
  
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =  config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = []
 
